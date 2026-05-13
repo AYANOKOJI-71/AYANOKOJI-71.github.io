@@ -1,0 +1,194 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[left=1.78cm,right=1.78cm,top=1.42cm,bottom=1.50cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{fontawesome5}
+\usepackage{ragged2e}
+\usepackage{url}
+\urlstyle{same}
+
+\definecolor{sectionblue}{HTML}{003366}
+\definecolor{linkblue}{HTML}{1450A0}
+\definecolor{footergray}{gray}{0.5}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=linkblue,
+  linkcolor=linkblue,
+  pdfauthor={Sarowar Hossain Rony},
+  pdftitle={Sarowar Hossain Rony CV}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\small\itshape\color{footergray}Sarowar Hossain Rony --- Page \thepage\ of \pageref*{LastPage}}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=1.1em,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt}
+\setlength{\tabcolsep}{0pt}
+\renewcommand{\arraystretch}{1.0}
+
+\newcommand{\cvsection}[1]{%
+  \vspace{13pt}%
+  {\Large\bfseries\color{sectionblue}#1\par}%
+  \vspace{4pt}%
+  {\color{sectionblue}\hrule height 0.7pt}%
+  \vspace{9pt}%
+}
+
+\newcommand{\eduentry}[4]{%
+  \noindent\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & \textbf{#2}\\[-1pt]
+    \textit{\color{linkblue}#3} & \textit{#4}
+  \end{tabular*}\par
+}
+
+\newcommand{\skillrow}[2]{%
+  \noindent\begin{tabular*}{\textwidth}{@{}>{\bfseries}p{0.205\textwidth}@{\hspace{0.35em}}>{\RaggedRight\arraybackslash}p{0.79\textwidth}@{}}
+    #1 & #2
+  \end{tabular*}\par
+}
+
+\newcommand{\projectentry}[4]{%
+  \begin{samepage}
+  \noindent\begin{tabular*}{\textwidth}{@{}>{\RaggedRight\arraybackslash}p{0.70\textwidth}@{\extracolsep{\fill}}>{\RaggedLeft\arraybackslash}p{0.28\textwidth}@{}}
+    \textbf{#1} & \textit{#2}
+  \end{tabular*}\par
+  \begin{itemize}[leftmargin=1.35em,itemsep=0pt,topsep=1pt]
+    \item #3
+    \item #4
+  \end{itemize}
+  \vspace{0pt}
+  \end{samepage}
+}
+
+\newcommand{\achievemententry}[3]{%
+  \noindent\begin{tabular*}{\textwidth}{@{}>{\RaggedRight\arraybackslash}p{0.72\textwidth}@{\extracolsep{\fill}}>{\RaggedLeft\arraybackslash}p{0.26\textwidth}@{}}
+    \textbf{#1} & \textbf{#2}
+  \end{tabular*}\par
+  \begin{itemize}
+    \item #3
+  \end{itemize}
+  \vspace{2pt}
+}
+
+\newcommand{\activityentry}[4]{%
+  \begin{samepage}
+  \noindent\begin{tabular*}{\textwidth}{@{}>{\RaggedRight\arraybackslash}p{0.74\textwidth}@{\extracolsep{\fill}}>{\RaggedLeft\arraybackslash}p{0.24\textwidth}@{}}
+    \textbf{#1} \textbar\ \textbf{\textit{#2}} & \textit{#3}
+  \end{tabular*}\par
+  \begin{itemize}
+    #4
+  \end{itemize}
+  \vspace{2pt}
+  \end{samepage}
+}
+
+\begin{document}
+\thispagestyle{fancy}
+
+\noindent
+\begin{minipage}[t]{0.78\textwidth}
+  \vspace{0pt}
+  {\LARGE\bfseries Sarowar Hossain Rony\par}
+  \vspace{4pt}
+  {\small BCSE 23 $\bullet$ ID: 23524202051\par}
+  \vspace{6pt}
+  {\small \faPhone\ \href{tel:01303591821}{01303591821}\hspace{1.4em}\faEnvelope\ \href{mailto:shrony1995@gmail.com}{shrony1995@gmail.com}\par}
+  \vspace{2pt}
+  {\small \faMapMarker*\ Eastern housing, Block J, Road 13, House 10, Mirpur, Dhaka-1216\par}
+  \vspace{2pt}
+  {\small \faLinkedin\ \href{https://www.linkedin.com/in/shrony/}{shrony}\hspace{1.6em}\faGithub\ \href{https://github.com/AYANOKOJI-71}{AYANOKOJI-71}\par}
+\end{minipage}\hfill
+\hspace*{-0.15cm}\smash{\raisebox{-3.55cm}[0pt][0pt]{\includegraphics[width=3.10cm,clip,trim=1 0 1 0]{IMG_8622.png}}}
+
+\vspace{-3pt}
+\cvsection{EDUCATION}
+
+\eduentry{Bachelor of Computer Science and Engineering}{Jun 2023 -- Jul 2027 (Expected)}{Bangladesh University of Professionals (BUP)}{Dhaka, Bangladesh}
+\begin{itemize}
+  \item \textbf{CGPA}: 3.40 / 4.00 (up to 5th semester)
+\end{itemize}
+
+\vspace{5pt}
+\eduentry{Higher Secondary Certificate (HSC)}{2019 -- 2021}{Azizul Haque College Bogura}{Bogura, Bangladesh}
+\begin{itemize}
+  \item \textbf{GPA}: 5.00 / 5.00 \hspace{1.4em} \textbf{Group}: Science
+\end{itemize}
+
+\vspace{5pt}
+\eduentry{Secondary School Certificate (SSC)}{2017 -- 2019}{Police Lines School And College Bogura}{Bogura, Bangladesh}
+\begin{itemize}
+  \item \textbf{GPA}: 5.00 / 5.00 \hspace{1.4em} \textbf{Group}: Science
+\end{itemize}
+
+\cvsection{TECHNICAL SKILLS}
+
+\skillrow{Languages}{C, C++, Python, Java, JavaScript, SQL}
+\skillrow{Databases}{MySQL, PostgreSQL}
+\skillrow{Tools \& Platforms}{Git, Docker, Wireshark, Burp Suite, n8n, Ghidra, Nessus, Nmap, Metasploit, Hashcat}
+\skillrow{Operating Systems}{Linux, Windows, Mac}
+
+\cvsection{PROJECTS}
+
+\projectentry{\href{https://github.com/AYANOKOJI-71/Phishing-link-checker}{Phishing Link Checker}}{Python}{Developed a phishing-link analysis tool to inspect suspicious URLs and identify common phishing indicators through a modular Python workflow.}{Organized the project with CLI, parsing, extractor, and reputation-check modules to support structured link analysis.}
+\projectentry{\href{https://github.com/AYANOKOJI-71/LSB_Image_steganography}{LSB Image Steganography}}{C}{Built a BMP image steganography tool that hides and extracts secret messages using least significant bit (LSB) encoding.}{Strengthened low-level programming, file handling, and bitwise logic through implementation in C.}
+\projectentry{\href{https://github.com/AYANOKOJI-71/Demo-Muntaha}{Muntaha Alert}}{HTML / CSS / Python}{Developed a missing-person alert prototype inspired by Amber Alert to notify nearby users and support faster response.}{Integrated pathfinding-based logic to identify the nearest police stations for routing and assistance.}
+\projectentry{\href{https://github.com/AYANOKOJI-71/free-exam-hall-seating-arrangement-management}{BUP Exam Hall Seating Arrangement}}{C++ / DSA}{Collaborated on a four-member team project to automate exam hall seat allocation for academic use.}{Applied data structures and algorithmic thinking to generate organized seating plans based on predefined constraints.}
+\projectentry{\href{https://github.com/AYANOKOJI-71/ApartmentRentalSystem}{Flat Rental System}}{SQL}{Designed an SQL-based rental management system to handle flat listings, tenant records, bookings, rent payments, and availability.}{Structured database operations to support record management and day-to-day rental tracking efficiently.}
+
+\cvsection{ACHIEVEMENTS}
+
+\achievemententry{BUET CTF}{2026}{Secured \textbf{7th} place, demonstrating strong problem-solving and hands-on skills across multiple cybersecurity challenge categories.}
+\achievemententry{StealthFlags CTF in Televerse 1.0 by CUET}{2025}{Secured \textbf{11th} place, competing against skilled teams in a variety of offensive security challenges.}
+\achievemententry{V1t CTF}{2025}{Ranked \textbf{20th} globally among 1,497 teams, reflecting strong international-level performance in competitive CTF events.}
+\achievemententry{TexSAW CTF}{2026}{Achieved \textbf{22nd} place globally among 747 teams, showcasing consistency in solving advanced cybersecurity problems under pressure.}
+\achievemententry{ICPC Participation}{2024, 2025}{Participated in the International Collegiate Programming Contest Online Preliminary Round in both years, strengthening algorithmic thinking and competitive programming skills.}
+\achievemententry{Cyber Invasion Army (CIA)}{}{Co-founded the team and helped lead it to \textbf{\#5} on CTFtime through active participation and strong performance in national and international CTF competitions.}
+\achievemententry{Certified Red Team Operations Management (CRTOM)}{}{Earned certification in red team operations management, covering offensive security planning, execution, and operational coordination.}
+
+\cvsection{CO-CURRICULAR ACTIVITIES}
+
+\activityentry{BUP InfoTech Club (BUPITC)}{General Member}{2025 -- Present}{%
+  \item Coordinated teams and supported programming contests and workshops while contributing to community growth through collaborative learning and skill development initiatives.
+}
+
+\activityentry{Cyber Invasion Army (CTF Team)}{Co-Founder}{Sept 2025 -- Present}{%
+  \item Co-Founded a cybersecurity initiative focused on offensive security research, competitive CTF participation, and open-source security tooling.
+  \item Lead collaboration across security domains including OSINT, reverse engineering, exploitation, and hands-on problem solving.
+}
+
+\cvsection{REFERENCES}
+
+\noindent
+\begin{tabular*}{\textwidth}{@{}p{0.44\textwidth}@{\extracolsep{\fill}}p{0.44\textwidth}@{}}
+  \begin{tabular}[t]{@{}l@{}}
+    \textbf{Iyolita Islam}\\
+    Lecturer\\
+    Department of Computer Science \& Engineering\\
+    Bangladesh University of Professionals\\
+    \faEnvelope\ \href{mailto:iyolitaislam@bup.edu.bd}{iyolitaislam@bup.edu.bd}
+  \end{tabular}
+  &
+  \begin{tabular}[t]{@{}l@{}}
+    \textbf{Rumana Yasmin}\\
+    Lecturer\\
+    Department of Computer Science \& Engineering\\
+    Bangladesh University of Professionals\\
+    \faEnvelope\ \href{mailto:rumana.yasmin@bup.edu.bd}{rumana.yasmin@bup.edu.bd}
+  \end{tabular}
+\end{tabular*}
+
+\end{document}
