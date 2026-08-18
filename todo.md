@@ -10,4 +10,4 @@
 - [ ] Push the portfolio update only after the owner explicitly approves the preview.
 - [x] Move the hero qualification card below the profile photo without overlapping the portrait.
 - [x] Add an accessible optional night mode with a persistent user preference and a refined dark visual system.
-- [ ] Commit the approved portfolio redesign and profile-photo asset before publication.
+- [x] Commit the approved portfolio redesign and profile-photo asset before publication.
