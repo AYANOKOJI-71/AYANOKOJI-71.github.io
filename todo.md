@@ -11,5 +11,5 @@
 - [x] Move the hero qualification card below the profile photo without overlapping the portrait.
 - [x] Add an accessible optional night mode with a persistent user preference and a refined dark visual system.
 - [x] Commit the approved portfolio redesign and profile-photo asset before publication.
-- [ ] Diagnose and correct the GitHub Pages deployment so the live portfolio serves the approved redesign.
+- [x] Diagnose and correct the GitHub Pages deployment so the live portfolio serves the approved redesign.
 - [x] Update the GitHub Pages workflow to deploy the redesigned homepage and supplied profile-photo asset.
