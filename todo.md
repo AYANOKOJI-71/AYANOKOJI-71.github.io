@@ -16,4 +16,4 @@
 - [x] Reduce excessive left and right whitespace in the desktop portfolio composition.
 - [x] Change the navigation brand label to Sarowar Hossain Rony.
 - [x] Reduce the desktop layout from the overly stretched width to a balanced middle width.
-- [ ] Commit and publish the approved balanced layout and full navigation-name refinement.
+- [x] Commit and publish the approved balanced layout and full navigation-name refinement.
