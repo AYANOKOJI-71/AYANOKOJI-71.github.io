@@ -33,9 +33,9 @@ jobs:
       - name: Prepare site
         run: |
           mkdir -p _site
-          cp portfolio.html _site/index.html
+          cp index.html _site/index.html
           cp 23524202051.pdf _site/
-          cp "WhatsApp Image 2026-05-03 at 5.31.14 PM.jpeg" _site/
+          cp -R assets _site/assets
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
